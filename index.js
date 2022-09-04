@@ -1,7 +1,6 @@
 import { Telegraf } from 'telegraf';
 
-// const bot = new Telegraf(process.env.BOT_TOKEN);
-const bot = new Telegraf('5619135668:AAG58I5Bu87iMXicWY1awlbdqwhdDayaR74');
+const bot = new Telegraf(process.env.BOT_TOKEN);
 
 bot.command('quit', ctx => {
   ctx.telegram.leaveChat(ctx.message.chat.id);
